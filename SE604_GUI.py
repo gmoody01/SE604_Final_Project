@@ -9,16 +9,13 @@ HEIGHT = 800
 WIDTH = 1000
 
 #def getfile_local:
-   
- with open('DJIA.csv', 'r') as getfile_local:
- getfile_local = csv.reader(csv_file)
-
-   for line in csv_reader:
-        print(line) 
+#   
+#
+#
 #    label = GRAPH DISPLAYS HERE or provide error msg
-
+#
 #def getfile_external:
-    
+#    
 #    label = GRAPH DISPLAYS HERE or provide error msg
 
 root = tk.Tk()
@@ -57,3 +54,10 @@ label = tk.Label(lowest_frame)
 label.place(relwidth=1, relheight=1)
 
 root.mainloop()
+
+with open('DJIA.csv', 'r') as getfile_local:
+    getfile_local = csv.reader(getfile_local)
+
+    for line in getfile_local:
+        print(line)
+print("Congratulation")
