@@ -2,12 +2,19 @@
 
 import tkinter as tk
 import requests
+import csv
+import math
 
 HEIGHT = 800
 WIDTH = 1000
 
 #def getfile_local:
-    
+   
+ with open('DJIA.csv', 'r') as getfile_local:
+ getfile_local = csv.reader(csv_file)
+
+   for line in csv_reader:
+        print(line) 
 #    label = GRAPH DISPLAYS HERE or provide error msg
 
 #def getfile_external:
