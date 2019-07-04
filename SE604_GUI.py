@@ -55,6 +55,9 @@ label.place(relwidth=1, relheight=1)
 
 root.mainloop()
 
+#This opens the .csv file as a read-only file calling it getfile_local.
+#The csv.reader is a function of csv import that reads the file.
+#The file is then printed.
 with open('DJIA.csv', 'r') as getfile_local:
     getfile_local = csv.reader(getfile_local)
 
