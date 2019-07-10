@@ -8,7 +8,7 @@ import math
 HEIGHT = 800
 WIDTH = 1000
 
-#def getfile_local:
+def getfile_local(entry):
 #   
 #
 #
@@ -33,7 +33,7 @@ frame.place(relx=0.5, rely=0.1, relwidth=0.8, relheight=0.075, anchor='n')
 entry = tk.Entry(frame, font=40)
 entry.place(relwidth=0.65, relheight=1)
 
-button = tk.Button(frame, text="Graph Local File", font=40)
+button = tk.Button(frame, text="Graph Local File", font=40, command = Lambda: getfile_local(entry.get()))
 #add command or function within parenthesis above, code TBD. possibly as follows: command=lambda: getfile_local(entry.get())
 button.place(relx=0.7, relheight=1, relwidth=0.3)
 
