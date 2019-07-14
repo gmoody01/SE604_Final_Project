@@ -1,6 +1,5 @@
-# UPDATED as of 13 July 2019 by JW
-# Program now displays a graph in the bottom center of the GUI
-# Need help figuring out how to move the graph up so it's within the appropriate window
+# UPDATED as of 14 July 2019 by JW
+# Program now displays a graph in the GUI
 
 # create a GUI to prompt user to provide a file location for a local file or an external file
 
@@ -62,7 +61,7 @@ def getfile_local(init_data_file):
         f = Figure(figsize=(6,6), dpi=100)
         a = f.add_subplot(111)
         a.plot(date,average)
-        canvas = FigureCanvasTkAgg(f, master=root)
+        canvas = FigureCanvasTkAgg(f, master=lowest_frame)
         canvas.get_tk_widget().pack(side=tk.TOP)
         canvas.draw()
        
