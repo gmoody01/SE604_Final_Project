@@ -94,7 +94,7 @@ canvas.pack()
 
 # This photo image location can be a flash drive location
 # Be sure in the file argument to put double slashes for tkinter module to read directory location of where image is.
-# This location can be found by left clicking the image in your file explorer and clicking Properties for file info.
+# This location can be found by right clicking the image in your file explorer and clicking Properties for file info.
 
 background_image = tk.PhotoImage(file="D:\\Smart_Cities_Image_2")
 background_label = tk.Label(root, image=background_image)
